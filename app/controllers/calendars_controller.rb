@@ -5,7 +5,6 @@ class CalendarsController < ApplicationController
     get_week
     @plan = Plan.new
   end
-
   # 予定の保存
   def create
     Plan.create(plan_params)
